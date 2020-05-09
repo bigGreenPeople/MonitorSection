@@ -1,5 +1,5 @@
 ;;;
-;;; PassThrough
+;;; MonitorSection
 ;;;
 ;;;
 ;;; Copyright (c) 1999 - 2001, Microsoft Corporation
@@ -11,7 +11,7 @@ Class       = "ActivityMonitor"                         ;This is determined by t
 ClassGuid   = {b86dff51-a31e-4bac-b3cf-e8cfe75c9fc2}    ;This value is determined by the Class
 Provider    = %Msft%
 DriverVer   = 06/16/2007,1.0.0.1
-CatalogFile = passthrough.cat
+CatalogFile = monitorsection.cat
 
 
 [DestinationDirs]
@@ -72,7 +72,7 @@ HKR,"Instances\"%Instance1.Name%,"Flags",0x00010001,%Instance1.Flags%
 %DriverName%.sys
 
 [SourceDisksFiles]
-passthrough.sys = 1,,
+monitorsection.sys = 1,,
 
 [SourceDisksNames]
 1 = %DiskId1%,,,
@@ -83,14 +83,14 @@ passthrough.sys = 1,,
 
 [Strings]
 Msft                    = "Fujie Corporation"
-ServiceDescription      = "PassThrough Mini-Filter Driver"
-ServiceName             = "PassThrough"
-DriverName              = "PassThrough"
-DiskId1                 = "PassThrough Device Installation Disk"
+ServiceDescription      = "MonitorSection Mini-Filter Driver"
+ServiceName             = "MonitorSection"
+DriverName              = "MonitorSection"
+DiskId1                 = "MonitorSection Device Installation Disk"
 
 ;Instances specific information.
-DefaultInstance         = "PassThrough Instance"
-Instance1.Name          = "PassThrough Instance"
+DefaultInstance         = "MonitorSection Instance"
+Instance1.Name          = "MonitorSection Instance"
 Instance1.Altitude      = "370030"
 Instance1.Flags         = 0x0              ; Allow all attachments
 
